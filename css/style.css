@@ -42,6 +42,51 @@ body::-webkit-scrollbar {
     }
 }
 
+.cloud {
+    position: absolute;
+    z-index: 0;
+}
+
+#cloud1 {
+    top: 19vh;
+    left: 10vw;
+    width: 260px;
+    height: 160px;
+    animation: ani 1.7s infinite alternate ease-in-out;
+}
+
+#cloud2 {
+    top: 64vh;
+    left: 22vw;
+    width: 130px;
+    height: 80px;
+    animation: ani 1.3s infinite alternate ease-in-out;
+}
+
+#cloud3 {
+    top: 29vh;
+    left: 75vw;
+    width: 156px;
+    height: 96px;
+    animation: ani 1.5s infinite alternate ease-in-out;
+}
+
+#cloud4 {
+    top: 32vh;
+    left: 5vw;
+    width: 130px;
+    height: 80px;
+    animation: ani 1.6s infinite alternate ease-in-out;
+}
+
+#cloud5 {
+    top: 55vh;
+    left: 89vw;
+    width: 272px;
+    height: 192px;
+    animation: ani 1.4s infinite alternate ease-in-out;
+}
+
 #imgcenter {
     position: relative;
     align-items: center;
@@ -190,7 +235,7 @@ body::-webkit-scrollbar {
     height: 100vh;
     text-align: center;
     align-items: center;
-    background-color: white;
+    background-color: #FAFAF8;
     display: none;
     animation: change 0.4s ease forwards;
 }
@@ -202,6 +247,19 @@ body::-webkit-scrollbar {
     line-height: 38px;
     align-items: center;
     text-align: center;
+}
+
+#moving {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 40vh;
+    padding-bottom: 30px;
+}
+
+#movinggif {
+    width: 180px;
+    height: 180px;
 }
 
 /*결과페이지*/
@@ -385,4 +443,256 @@ body::-webkit-scrollbar {
 #shareKkt {
     width: 80px;
     height: 80px;
+}
+
+@media(max-width: 768px) {
+    
+    /* 시작페이지 */
+    #titleimg {
+        padding-top: 52px;
+        width: 265px;
+        height: 135px;
+    }
+    
+    #title {
+        font-size: 32px;
+        font-weight: 900;
+        padding-top: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #smalltitle {
+        font-size: 21px;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-left: 70px;
+        padding-right: 70px;
+        line-height: 27px;
+    }
+    
+    .start {
+        width: 200px;
+        height: 54px;
+        padding-top: 60px;
+    }
+    
+    #startbtn {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    #cloud1 {
+        top: 4vh;
+        left: -24vw;
+        width: 173px;
+        height: 109px;
+        animation: ani 1.7s infinite alternate ease-in-out;
+    }
+    
+    #cloud2 {
+        top: 79vh;
+        left: 10vw;
+        width: 141px;
+        height: 85px;
+        animation: ani 1.3s infinite alternate ease-in-out;
+    }
+    
+    #cloud3 {
+        top: 20vh;
+        left: 78vw;
+        width: 153px;
+        height: 96px;
+        animation: ani 1.5s infinite alternate ease-in-out;
+    }
+    
+    #cloud4 {
+        top: 35vh;
+        left: 5vw;
+        width: 94px;
+        height: 56px;
+        animation: ani 1.6s infinite alternate ease-in-out;
+    }
+    
+    #cloud5 {
+        top: 56vh;
+        left: 77vw;
+        width: 272px;
+        height: 192px;
+        animation: ani 1.4s infinite alternate ease-in-out;
+    }
+
+    /* 질문페이지 */
+
+    #gohome {
+        width: 35px;
+        height: 31px;
+        margin-top: 8vh;
+    }
+
+    .questions {
+        padding-top: 50px;
+    }
+    
+    .q-number {
+        font-size: 24px;
+    }
+    
+    .q-contents {
+        padding: 25px 65px 0px 65px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+    
+    .options {
+        padding: 58px 50px 100px 50px;
+    }
+    
+    .opt1, .opt2 {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 25px 38px 25px 38px;
+        margin-bottom: 28px;
+    }
+
+    /* 로딩페이지 */
+
+    #roadletter {
+        font-size: 21px;
+        font-weight: 700;
+        padding-top: 419px;
+        line-height: 38px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #movinggif {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* 결과페이지 */
+
+    .spk {
+        z-index: -1;
+    }
+
+    #spk1 {
+        top: 21vh;
+        left: 13vw;
+        width: 44px;
+        height: 57px;
+    }
+    
+    #spk2 {
+        top: 27vh;
+        left: 19vw;
+        width: 28px;
+        height: 30px;
+    }
+    
+    #spk3 {
+        top: 40vh;
+        left: 74vw;
+        width: 30px;
+        height: 40px;
+    }
+    
+    #spk4 {
+        top: 45vh;
+        left: 75vw;
+        width: 54px;
+        height: 73px;
+    }
+    
+    #spk5 {
+        top: 5vh;
+        left: 67vw;
+        width: 32px;
+        height: 40px;
+    }
+    
+    #spk6 {
+        top: 84vh;
+        left: 19vw;
+        width: 40px;
+        height: 50px;
+        opacity: 0.7;
+    }
+    
+    #spk7 {
+        top: 108vh;
+        left: 70vw;
+        width: 48px;
+        height: 60px;
+        opacity: 0.7;
+    }
+
+    .message {
+        padding-top: 110px;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 41px;
+    }
+    
+    #s_explain {
+        font-size: 18px;
+        padding-top: 28px;
+        padding-bottom: 3px;
+    }
+    
+    #b_dragon_name {
+        font-size: 32px;
+        font-weight: 900;
+    }
+    
+    #dExplain {
+        padding: 30px 60px 60px 60px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    
+    }
+    
+    #resultdragon {
+        padding-top: 35px;
+    
+    }
+    
+    #dImage {
+        width: 200px;
+        height: 256px;
+    }
+
+    #sharemsg {
+        font-size: 19px;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+    
+    .replay {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+    
+    .rplbtn {
+        background: gray;
+        border: 1px solid gray;
+        transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .link-icon {   
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #shareTwt, #shareFcb, #shareKkt {
+        width: 60px;
+        height: 60px;
+    }
+
+    .share {
+        padding-top: 5px;
+    }
+
 }

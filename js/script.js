@@ -165,13 +165,33 @@ function getResult() {
 
 function shareTwitter() {
   var sendText = "나만의 메타-드래곤 찾기"; // 전달할 텍스트
-  var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+  var sendUrl = "https://jyjyp.github.io/partnerdragon/"; // 전달할 URL
   window.open(
     "https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl
   );
 }
 
 function shareFacebook() {
-  var sendUrl = "devpad.tistory.com/"; // 전달할 URL
+  var sendUrl = "https://jyjyp.github.io/partnerdragon/"; // 전달할 URL
   window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+}
+
+function shareKakao() {
+  // 사용할 앱의 JavaScript 키 설정
+  Kakao.init("64d47f16d21e6014e6d8a7c3f9b9e105");
+
+  // 카카오링크 버튼 생성
+  Kakao.Link.createDefaultButton({
+    container: "#btnKakao", // 카카오공유버튼ID
+    objectType: "feed",
+    content: {
+      title: "나만의 메타-드래곤 찾기", // 보여질 제목
+      description: "나와 천생연분인 메타-드래곤 알아보기", // 보여질 설명
+      imageUrl: "https://jyjyp.github.io/partnerdragon/", // 콘텐츠 URL
+      link: {
+        mobileWebUrl: "https://jyjyp.github.io/partnerdragon/",
+        webUrl: "https://jyjyp.github.io/partnerdragon/",
+      },
+    },
+  });
 }

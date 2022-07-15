@@ -12,13 +12,20 @@
     <title>메타토이공모전</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
 </head>
 <body>
 
     <!--시작페이지-->
 
     <section id="intro">
-        <div id="bgimg"></div>
+        <div id="clouds">
+            <img class="cloud" id="cloud1" src="image/cloud1.png">
+            <img class="cloud" id="cloud2" src="image/cloud2.png">
+            <img class="cloud" id="cloud3" src="image/cloud3.png">
+            <img class="cloud" id="cloud4" src="image/cloud4.png">
+            <img class="cloud" id="cloud5" src="image/cloud5.png">
+        </div>
         <div id="title">
             <div id="bigtitle">나의 파트너 드래곤은?</div>
             <div id="smalltitle">나와 천생연분인 메타-드래곤 알아보기</div>
@@ -101,8 +108,8 @@
     <!--로딩페이지-->
 
     <section id="roading">
-        <div>
-            <!--움짤 넣기-->
+        <div id="moving">
+            <img id="movinggif" src="image/egg.gif">
         </div>
         <div id="roadletter">
             당신의 파트너가<br>
@@ -155,5 +162,7 @@
 
     </section>
 
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </body>
+
 </html>
