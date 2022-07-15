@@ -1,0 +1,388 @@
+
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+/* section {
+    height: 100%;
+    width: 100%;
+} */
+
+/*시작페이지*/
+
+
+#intro {
+    height: 100vh;
+    align-items: center;
+    background-color: #189CF4;
+    display: block;
+}
+
+@keyframes change {
+    from {
+      transform: translateY(3%);
+      visibility: visible;
+      opacity: 0.2;
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+}
+
+#imgcenter {
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+#titleimg {
+    padding-top: 40px;
+    width: 573px;
+    height: 292px;
+    transition: 0.2s ease-in-out;
+}
+
+#titleimg:hover{
+    transform: scale(1.15);
+}
+
+#title {
+    position: relative;
+    font-size: 57px;
+    font-weight: 900;
+    padding-top: 160px;
+    line-height: 60px;
+    color: #1B1B1B;
+    align-items: center;
+    text-align: center;
+}
+
+#smalltitle {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 65px;
+    color: #1B1B1B;
+}
+
+.start {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    left: 50%;
+    transform:translate(-50%);
+    padding-top: 65px;
+    align-items: center;
+    text-align: center;
+}
+
+#startbtn {
+    background: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#startbtn:hover{
+    background: #FFD92E;
+    border: 3px solid #FFD92E;
+    transform: scale(1.15);
+}
+
+#starttext {
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+/*질문페이지*/
+
+
+#gohome {
+    width: 50px;
+    height: 45px;
+    margin-top: 12vh;
+    cursor: pointer;
+}
+
+#question {
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    display: none;
+    animation: change 0.3s ease forwards;
+}
+
+
+.act {
+    height: 60vh;
+}
+
+#q2 {
+    display: none;
+}
+#q3 {
+    display: none;
+}
+#q4 {
+    display: none;
+}
+#q5 {
+    display: none;
+}
+
+.questions {
+    padding-top: 164px;
+}
+
+.q-number {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    color: #818181;
+}
+
+.q-contents {
+    padding: 25px 120px 0px 120px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.options {
+    padding: 84px 200px 254px 200px;
+}
+
+.opt1, .opt2 {
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #eeeded;
+    border-radius: 50px;
+    padding: 18px 40px 18px 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.opt1:hover, .opt2:hover {
+    background-color: #189CF4;
+    color: white;
+    transform: scale(1.12);
+    
+}
+
+/*로딩페이지*/
+
+#roading {
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    display: none;
+    animation: change 0.4s ease forwards;
+}
+
+#roadletter {
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 419px;
+    line-height: 38px;
+    align-items: center;
+    text-align: center;
+}
+
+/*결과페이지*/
+
+#result {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    display: none;
+    animation: change 0.4s ease forwards;
+}
+
+.spk {
+    position: absolute;
+    z-index: 2;
+}
+
+#spk1 {
+    top: 15vh;
+    left: 22vw;
+    width: 64px;
+    height: 80px;
+    animation: ani 1.5s infinite alternate ease-in-out;
+}
+
+#spk2 {
+    top: 24vh;
+    left: 25vw;
+    width: 40px;
+    height: 50px;
+    animation: ani 1.2s infinite alternate ease-in-out;
+}
+
+#spk3 {
+    top: 40vh;
+    left: 78vw;
+    width: 40px;
+    height: 50px;
+    animation: ani 1.3s infinite alternate ease-in-out;
+}
+
+#spk4 {
+    top: 45vh;
+    left: 80vw;
+    width: 88px;
+    height: 110px;
+    animation: ani 1.8s infinite alternate ease-in-out;
+}
+
+#spk5 {
+    top: 5vh;
+    left: 67vw;
+    width: 32px;
+    height: 40px;
+    animation: ani 1.1s infinite alternate ease-in-out;
+}
+
+#spk6 {
+    top: 84vh;
+    left: 19vw;
+    width: 40px;
+    height: 50px;
+    animation: ani 1.0s infinite alternate ease-in-out;
+}
+
+#spk7 {
+    top: 108vh;
+    left: 70vw;
+    width: 48px;
+    height: 60px;
+    animation: ani 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes ani{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,20px);}
+ }  
+
+.message {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+}
+
+#s_explain {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 30px;
+}
+
+#b_dragon_name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    padding-top: 0px;
+}
+
+#dExplain {
+    padding: 30px 180px 85px 180px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+#resultdragon {
+    padding-top: 45px;
+
+}
+
+#dImage {
+    width: 216px;
+    height: 276px;
+}
+
+#sharemsg {
+    font-weight: 600;
+    font-size: 21px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.replay {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.rplbtn {
+    background: gray;
+    border: 1px solid gray;
+    transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.rplbtn:hover{
+    background: #FFD92E;
+    border: 3px solid #FFD92E;
+    transform: scale(1.15);
+}
+
+
+/* 공유하기 */
+
+.link-icon { 
+    position: relative; 
+    display: inline-block; 
+    width: auto;    
+    font-size: 14px; 
+    font-weight: 500; 
+    color: #333; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.link-icon.twitter { 
+    
+    background-image: url(image/icon-twitter.png); 
+    background-repeat: no-repeat; 
+}
+.link-icon.facebook { 
+    
+    background-image: url(image/icon-facebook.png); 
+    background-repeat: no-repeat; 
+} 
+.link-icon.kakao { 
+    
+    background-image: url(image/icon-kakao.png); 
+    background-repeat: no-repeat; 
+}
+
+#shareTwt {
+    width: 80px;
+    height: 80px;
+}
+
+#shareFcb {
+    width: 80px;
+    height: 80px;
+}
+
+#shareKkt {
+    width: 80px;
+    height: 80px;
+}
